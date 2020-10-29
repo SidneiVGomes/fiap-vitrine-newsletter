@@ -1,4 +1,4 @@
-# fiap-vitrine-newsletter
+# VitrineNewsletter
 
 ### Finalidade
 Projeto Acadêmico
