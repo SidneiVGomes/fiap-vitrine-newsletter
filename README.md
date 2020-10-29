@@ -15,8 +15,3 @@ Ele é composto por dois módulos:
 
 1. Servido - Desenvolvido com NODE Express e MongoDB, disponibiliza os recursos necessários para o CRUD.
 2. WebApp  - Desenvolvido em Angular, é a ferramenta onde os comérios irão publicar suas notícias.
-
-### Execução do APP
-Para rodar o servidor é necessário configura a string de conexão
-
-Para executar o APP, na pasta do projeto execute NG SERVE.
