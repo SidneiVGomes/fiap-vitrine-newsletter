@@ -3,6 +3,10 @@
 
 ### How to use:
 
+Configure the connection with MongoDB in the file .ENV parameter "MONGO_DB_CONNECTION", example:
+"MONGO_DB_CONNECTION = mongodb: // localhost: 27017 / app-showcase-newsletter"
+
+To run the server:
 - npm run dev
 - yarn dev
 
