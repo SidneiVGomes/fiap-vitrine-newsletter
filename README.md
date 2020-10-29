@@ -7,7 +7,7 @@ Projeto Acadêmico
 Desenvolvimento de um APP com as tecnologias MEAN.
 
 ### Sobre o APP Vitrine
-O Vitrine é um APP que fornece aos pequenos negócios locais uma uma ferramente para expor seus produtos a um baixo custo.
+O Vitrine é um APP que fornece aos pequenos negócios locais uma ferramente para expor seus produtos a um baixo custo.
 
 ### Sobre o APP Vitrine-Newsletter
 O Vitrine Newsletter é uma APP onde os comércios podem publicar notícias, novidades, curiosidades sobre seu negócio ou produtos.
