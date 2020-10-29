@@ -14,4 +14,4 @@ O Vitrine Newsletter é uma APP onde os comércios podem publicar notícias, nov
 Ele é composto por dois módulos:
 
 1. Servidor - Desenvolvido com NODE Express e MongoDB, disponibiliza os recursos necessários para o CRUD.
-2. WebApp   - Desenvolvido em Angular, é a ferramenta onde os comérios irão publicar suas notícias.
+2. WebApp   - Desenvolvido em Angular, é a ferramenta onde os comércios irão publicar suas notícias.
