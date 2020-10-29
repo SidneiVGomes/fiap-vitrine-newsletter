@@ -21,7 +21,7 @@ app.use(express.json());
 app.use(routes);
 
 app.listen(port, ()=>{
-    console.log('===============================================');
+    console.log('=====================================================');
     console.log('App running at: http://localhost:'+ port);
-    console.log('===============================================');
+    console.log('=====================================================');
 });
