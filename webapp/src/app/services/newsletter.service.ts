@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { NewsLetterDTO } from '../models/newsletter-dto.model';
 import { NewsLetter } from '../models/newsletter.model';
 
-const urlBase = 'http://localhost:3000/newsletter/';
+const urlAPI = 'http://localhost:3000/newsletter/';
 
 @Injectable({
   providedIn: 'root',
@@ -16,15 +16,15 @@ export class NewsletterService {
     }),
   };
 
-  constructor(private httpClient: HttpClient) {}
+  constructor(private _httpClient: HttpClient) {}
 
   public getNewsletters(): Observable<NewsLetter[]> {
-    return this.httpClient.get<NewsLetter[]>(urlBase);
+    return this._httpClient.get<NewsLetter[]>(urlAPI);
   }
 
   public postNewsletters(_newsLetter: NewsLetter): Observable<NewsLetter> {
-    return this.httpClient.post<NewsLetter>(
-      urlBase,
+    return this._httpClient.post<NewsLetter>(
+      urlAPI,
       _newsLetter,
       this.httpOptions
     );
@@ -38,16 +38,16 @@ export class NewsletterService {
     newsletterDTO.title = _newsLetter.title;
     newsletterDTO.message = _newsLetter.message;
 
-    return this.httpClient.put<NewsLetter>(
-      urlBase + _newsLetter._id,
+    return this._httpClient.put<NewsLetter>(
+      urlAPI + _newsLetter._id,
       newsletterDTO,
       this.httpOptions
     );
   }
 
-  public delete(id: string): Observable<NewsLetter> {
-    return this.httpClient.delete<NewsLetter>(
-      urlBase + id,
+  public delete(_id: string): Observable<NewsLetter> {
+    return this._httpClient.delete<NewsLetter>(
+      urlAPI + _id,
       this.httpOptions
     );
   }

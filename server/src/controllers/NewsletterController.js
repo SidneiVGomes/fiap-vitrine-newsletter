@@ -1,4 +1,4 @@
-const Newsletter = require('../models/Newsletter');
+const Newsletter = require('../models/newsletter');
 
 module.exports = {
     async index(req, res) {
@@ -40,10 +40,6 @@ module.exports = {
     async update(req, res) {
         const { id } = req.params;
         const { establishmentName, establishmentCategory, message, title } = req.body;
-
-        // const newsletter = await Newsletter.findByIdAndUpdate({ _id: id }, {
-        //     establishmentName, establishmentCategory, message, title
-        // })
 
         try {
             const newsletter = await Newsletter.findByIdAndUpdate({ _id: id }, req.body, { runValidators: true }).exec();
