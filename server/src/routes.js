@@ -1,5 +1,5 @@
 const { Router } = require('express');
-const NewsletterController = require('./controllers/NewsletterController')
+const NewsletterController = require('./controllers/newsletterController')
 
 const routes = Router();
 

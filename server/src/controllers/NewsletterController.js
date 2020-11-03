@@ -14,7 +14,7 @@ module.exports = {
     async store(req, res) {
         const { establishmentCategory, message, title, establishmentName } = req.body;
 
-        const newsletter = await Newsletter.create({
+            const newsletter = await Newsletter.create({
             establishmentCategory,
             message,
             title,
